@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Nabo, restaurant. Découvrez notre cuisine et retrouvez les informations pratiques pour votre visite.">
+    <title>Nabo — Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a data-i18n="skip" class="skip-link" href="#contenu">Aller au contenu</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a data-i18n-label="homeLabel" class="brand" href="#accueil" aria-label="Nabo — Accueil">NABO</a>
+        <nav data-i18n-label="navigation" aria-label="Navigation principale">
+          <ul class="nav-list">
+            <li><a data-i18n="home" href="#accueil">Accueil</a></li>
+            <li><a data-i18n="menu" href="#menu">Menu</a></li>
+            <li><a data-i18n="about" href="#a-propos">À propos</a></li>
+            <li><a data-i18n="contact" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="language-picker" hidden>
+          <label for="language" data-i18n="language">Langue</label>
+          <select id="language" name="language">
+            <option value="fr" lang="fr">Français</option>
+            <option value="en" lang="en">English</option>
+            <option value="nb" lang="nb">Norsk (bokmål)</option>
+          </select>
+        </div>
+      </div>
+    </header>
+
+    <main id="contenu" tabindex="-1">
+      <section id="accueil" class="hero section" aria-labelledby="titre-accueil">
+        <div class="container">
+          <p data-i18n="restaurant" class="eyebrow">Restaurant</p>
+          <h1 id="titre-accueil">NABO</h1>
+          <p data-i18n="intro" class="intro">Une cuisine simple, généreuse et de saison.</p>
+          <div class="hero-links">
+            <a data-i18n="discoverMenu" class="button" href="#menu">Découvrir le menu</a>
+            <a data-i18n="findUs" href="#contact">Nous trouver</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="menu" class="section" aria-labelledby="titre-menu">
+        <div class="container section-grid">
+          <h2 data-i18n="ourMenu" id="titre-menu">Notre menu</h2>
+          <div class="section-copy">
+            <p data-i18n="menuIntro">Découvrez notre sélection de plats.</p>
+            <!-- Remplacer ce texte par le menu ou un lien vers son fichier PDF. -->
+            <p data-i18n="menuSoon" class="muted">Le menu sera bientôt disponible ici.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="a-propos" class="section" aria-labelledby="titre-a-propos">
+        <div class="container section-grid">
+          <h2 data-i18n="aboutNabo" id="titre-a-propos">À propos de Nabo</h2>
+          <div class="section-copy">
+            <!-- Ajouter ici la présentation du restaurant. -->
+            <p data-i18n="aboutIntro">Notre cuisine, notre équipe, notre histoire.</p>
+            <p data-i18n="aboutSoon" class="muted">Nous vous en dirons bientôt un peu plus.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section" aria-labelledby="titre-contact">
+        <div class="container section-grid">
+          <h2 data-i18n="findUs" id="titre-contact">Nous trouver</h2>
+          <div class="contact-grid">
+            <!-- Remplacer les mentions ci-dessous par les informations réelles. -->
+            <div>
+              <h3 data-i18n="address">Adresse</h3>
+              <address data-i18n="addressSoon">Adresse et ville à venir.</address>
+            </div>
+            <div>
+              <h3 data-i18n="hours">Horaires</h3>
+              <p data-i18n="hoursSoon">Horaires à venir.</p>
+            </div>
+            <div>
+              <h3 data-i18n="contact">Contact</h3>
+              <p data-i18n="contactSoon">Téléphone et e-mail à venir.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>NABO © 2026</p>
+        <a data-i18n="contact" href="#contact">Contact</a>
+      </div>
+    </footer>
+  </body>
+</html>
+
