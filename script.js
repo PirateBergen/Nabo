@@ -1,4 +1,4 @@
-// Le français reste disponible dans le HTML, même sans JavaScript.
+// Le norvégien reste disponible dans le HTML, même sans JavaScript.
 // Ajouter les futurs textes avec une clé data-i18n et ses traductions ici.
 (() => {
   const translations = {
@@ -36,15 +36,8 @@
   const description = document.querySelector('meta[name="description"]');
   const selector = document.querySelector('#language');
   const storageKey = 'nabo-language';
-  // Capturer les textes français avant le premier changement de langue.
-  translations.fr = { title: document.title, description: description.content };
-  textNodes.forEach(node => { translations.fr[node.dataset.i18n] = node.textContent; });
-  labelNodes.forEach(node => {
-    translations.fr[node.dataset.i18nLabel] = node.getAttribute('aria-label');
-  });
-
   function setLanguage(language) {
-    const validLanguage = Object.hasOwn(translations, language) ? language : 'fr';
+    const validLanguage = Object.hasOwn(translations, language) ? language : 'nb';
     const copy = translations[validLanguage];
     textNodes.forEach(node => { node.textContent = copy[node.dataset.i18n]; });
     labelNodes.forEach(node => { node.setAttribute('aria-label', copy[node.dataset.i18nLabel]); });
@@ -54,9 +47,9 @@
     selector.value = validLanguage;
   }
 
-  let savedLanguage = 'fr';
+  let savedLanguage = 'nb';
   // Certains navigateurs bloquent le stockage en mode privé ou pour les fichiers locaux.
-  try { savedLanguage = localStorage.getItem(storageKey) || 'fr'; } catch { /* Garder le français. */ }
+  try { savedLanguage = localStorage.getItem(storageKey) || 'nb'; } catch { /* Garder le norvégien. */ }
   setLanguage(savedLanguage);
   selector.addEventListener('change', () => {
     setLanguage(selector.value);

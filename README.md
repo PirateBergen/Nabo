@@ -1,6 +1,6 @@
 # Nabo — Base du site
 
-Site statique en français, anglais et norvégien (bokmål), en HTML, CSS et JavaScript, sans dépendances ni installation.
+Site statique en norvégien (bokmål) par défaut et en anglais, en HTML, CSS et JavaScript, sans dépendances ni installation.
 Ouvrir `index.html` directement dans un navigateur pour le consulter.
 
 ## Fichiers
@@ -8,9 +8,9 @@ Ouvrir `index.html` directement dans un navigateur pour le consulter.
 - `index.html` : navigation, accueil, aperçu du menu, présentation, contact et horaires, pied de page.
 - `styles.css` : mise en page responsive et variables visuelles regroupées au début du fichier.
 
-`script.js` traduit les textes, les libellés accessibles et les métadonnées. Le sélecteur de langue mémorise le choix si le navigateur autorise le stockage local. Sans JavaScript, le site reste disponible en français et le sélecteur est masqué. Les liens de navigation fonctionnent nativement, y compris sur mobile. Aucun service externe, police distante ou image n'est chargé.
+`script.js` traduit les textes, les libellés accessibles et les métadonnées. Le sélecteur de langue mémorise le choix si le navigateur autorise le stockage local. Sans JavaScript, le site reste disponible en norvégien et le sélecteur est masqué. Les liens de navigation fonctionnent nativement, y compris sur mobile. Aucun service externe, police distante ou image n'est chargé.
 
-Pour ajouter un texte traduit, lui attribuer une clé `data-i18n` dans le HTML et ajouter cette même clé aux dictionnaires `en` et `nb` dans `script.js`. Le français est lu directement depuis le HTML au chargement. Pour les attributs `aria-label`, utiliser `data-i18n-label`.
+Pour ajouter un texte traduit, lui attribuer une clé `data-i18n` dans le HTML et ajouter cette même clé aux dictionnaires `en` et `nb` dans `script.js`. Conserver les textes norvégiens du HTML en accord avec le dictionnaire `nb`, y compris les libellés accessibles et la description. Une ancienne préférence française ou une valeur inconnue revient au norvégien ; un choix anglais enregistré reste respecté. Pour les attributs `aria-label`, utiliser `data-i18n-label`.
 
 ## Personnaliser
 
