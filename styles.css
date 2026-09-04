@@ -24,3 +24,7 @@ body{background:linear-gradient(180deg,#4b2b18 0%,#412414 30%,#351d10 62%,#28160
 .button:hover,.button:focus-visible{transform:scale(1.035);box-shadow:0 .7rem 1.5rem rgba(12,6,2,.24)}
 @media(prefers-reduced-motion:reduce){.button{transition:none}.button:hover,.button:focus-visible{transform:none}}
 
+/* Dark, warm brown direction matched to the supplied references. */
+body{background:linear-gradient(180deg,#1a1008 0%,#241408 34%,#1d1007 67%,#140b05 100%)}
+.hero .placeholder::after{background:linear-gradient(to bottom,rgba(26,16,8,0) 40%,rgba(26,16,8,.38) 64%,rgba(26,16,8,.82) 84%,#1a1008 100%),linear-gradient(90deg,rgba(12,7,4,.34),rgba(44,28,16,.1) 50%,rgba(12,7,4,.34))}
+.hours div,.hours div+div{background:rgba(8,4,2,.16)}
