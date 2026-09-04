@@ -4,7 +4,7 @@
 .hero{min-height:100svh;padding:8.5rem 1.25rem 3rem}
 .hero .placeholder{background-color:#332316;background-image:url("assets/hero-wood.jpg");background-repeat:repeat-x;background-position:center;background-size:auto min(100%,850px);color:transparent}
 .hero .placeholder::before{content:"";position:absolute;inset:0;background:rgba(63,45,31,.22)}
-.hero .placeholder::after{background:linear-gradient(to bottom,rgba(69,40,22,0) 32%,rgba(69,40,22,.32) 55%,rgba(69,40,22,.78) 78%,#452816 100%),linear-gradient(90deg,rgba(20,12,7,.24),rgba(86,62,42,.08) 50%,rgba(20,12,7,.24))}
+.hero .placeholder::after{background:linear-gradient(to bottom,rgba(75,43,24,0) 32%,rgba(75,43,24,.32) 55%,rgba(75,43,24,.78) 78%,#4b2b18 100%),linear-gradient(90deg,rgba(20,12,7,.24),rgba(86,62,42,.08) 50%,rgba(20,12,7,.24))}
 .hero-content{height:min(75vh,48rem);display:grid;grid-template-rows:auto 1fr auto auto;align-items:center}
 .hero-content .eyebrow{align-self:start;margin:0;font-size:clamp(.85rem,1.7vw,1.35rem);letter-spacing:.3em}
 .hero-logo{width:min(66vw,33rem);margin:auto;align-self:center}
@@ -14,4 +14,13 @@
 
 
 .story{background:linear-gradient(to bottom,#452816 0%,#452816 72%,#382011 100%)}
+
+/* Continuous page treatment: no section dividers or alternating brown panels. */
+body{background:linear-gradient(180deg,#4b2b18 0%,#412414 30%,#351d10 62%,#28160c 82%,#211107 100%)}
+.section,.alt,.story,footer{background:transparent;border-top:0}
+.hours{display:grid;gap:.55rem;border:0}
+.hours div,.hours div+div{border:0;background:rgba(20,10,4,.14)}
+.button{transition:transform .2s ease,background-color .2s ease,border-color .2s ease,box-shadow .2s ease}
+.button:hover,.button:focus-visible{transform:scale(1.035);box-shadow:0 .7rem 1.5rem rgba(12,6,2,.24)}
+@media(prefers-reduced-motion:reduce){.button{transition:none}.button:hover,.button:focus-visible{transform:none}}
 
