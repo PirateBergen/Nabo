@@ -28,3 +28,10 @@ body{background:linear-gradient(180deg,#4b2b18 0%,#412414 30%,#351d10 62%,#28160
 body{background:linear-gradient(180deg,#1a1008 0%,#241408 34%,#1d1007 67%,#140b05 100%)}
 .hero .placeholder::after{background:linear-gradient(to bottom,rgba(26,16,8,0) 40%,rgba(26,16,8,.38) 64%,rgba(26,16,8,.82) 84%,#1a1008 100%),linear-gradient(90deg,rgba(12,7,4,.34),rgba(44,28,16,.1) 50%,rgba(12,7,4,.34))}
 .hours div,.hours div+div{background:rgba(8,4,2,.16)}
+/* Flat color surfaces: no glow, radial light, or page-wide gradient. */
+body{background:#1a1008}
+.section,.alt,.story,footer{background:#1a1008}
+.reserve{background:#160c06}
+.reserve .placeholder{background:#160c06;color:transparent}
+.reserve .placeholder::before,.reserve .placeholder::after{display:none}
+.hours div,.hours div+div{background:#160c06}
