@@ -696,3 +696,28 @@ footer {
     padding: 1rem;
   }
 }
+
+/* Final scale adjustment while preserving the compact layout. */
+.hero-logo {
+  width: min(73vw, 42rem);
+}
+
+h1,
+h2 {
+  font-size: clamp(3.5rem, 7.5vw, 6.6rem);
+}
+
+.menu-logo {
+  width: min(21rem, 68vw);
+}
+
+@media (max-width: 40rem) {
+  .hero-logo {
+    width: 90vw;
+  }
+
+  h1,
+  h2 {
+    font-size: clamp(2.9rem, 14vw, 4.7rem);
+  }
+}
