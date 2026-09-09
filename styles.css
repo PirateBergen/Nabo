@@ -241,3 +241,36 @@ footer,
     background-size: 100% 100%, auto 720px;
   }
 }
+
+/* One uninterrupted veil from the top to the bottom of the document. */
+html {
+  background: #120904;
+}
+
+body {
+  background-color: #120904;
+  background-image:
+    linear-gradient(to bottom, rgba(24, 13, 6, 0.12) 0%, rgba(18, 9, 4, 0.94) 100%),
+    url("assets/hero-wood.jpg");
+  background-repeat: no-repeat, repeat;
+  background-position: center top, center top;
+  background-size: 100% 100%, auto 850px;
+}
+
+main,
+.hero,
+.section,
+.section.alt,
+.story,
+.reserve,
+.menu-board,
+footer {
+  background-color: transparent;
+  background-image: none;
+}
+
+.hours,
+.hours div,
+.hours div + div {
+  background: transparent;
+}
