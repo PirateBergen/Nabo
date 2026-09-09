@@ -356,3 +356,9 @@ footer {
 .menu-category.featured > h2 span {
   background: transparent;
 }
+
+/* Keep the finger-food title clear of the box border. */
+.menu-category.featured > h2 {
+  margin: 0 0 1.4rem;
+  padding: 0;
+}
