@@ -35,3 +35,166 @@ body{background:#1a1008}
 .reserve .placeholder{background:#160c06;color:transparent}
 .reserve .placeholder::before,.reserve .placeholder::after{display:none}
 .hours div,.hours div+div{background:#160c06}
+
+/* Menu board */
+.menu-board {
+  padding: clamp(2rem, 5vw, 4rem) max(1rem, calc((100vw - 82rem) / 2));
+  background: #1a1008;
+}
+
+.menu-inner {
+  padding: clamp(2rem, 5vw, 4.5rem);
+  background: #f3efe5;
+  color: #111;
+  border: 8px solid var(--orange);
+  box-shadow: none;
+}
+
+.menu-logo {
+  display: block;
+  width: min(17rem, 60vw);
+  height: auto;
+  margin: 0 auto 3rem;
+}
+
+.menu-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(2rem, 5vw, 5rem);
+}
+
+.menu-category {
+  margin-bottom: 2.5rem;
+}
+
+.menu-category > h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin: 0 0 1.4rem;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-size: clamp(1.15rem, 2vw, 1.45rem);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.menu-category > h2::before,
+.menu-category > h2::after {
+  content: "";
+  height: 2px;
+  flex: 1;
+  background: #111;
+}
+
+.menu-category article {
+  margin: 0 0 1.65rem;
+}
+
+.menu-category h3 {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 0;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
+  font-weight: 900;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+.menu-category h3 > span:first-child {
+  flex: 1;
+}
+
+.menu-category h3 > span:last-child {
+  white-space: nowrap;
+}
+
+.menu-category small {
+  font-size: 0.7em;
+}
+
+.menu-category p {
+  margin: 0.4rem 0 0;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.menu-category b {
+  color: var(--orange);
+}
+
+.menu-category .vegan,
+.allergens .vegan {
+  color: #178b4b;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+.menu-category.featured {
+  padding: 1.2rem;
+  border: 2px solid #111;
+}
+
+.menu-category.featured > h2 {
+  margin-top: -2.2rem;
+}
+
+.menu-category.featured > h2 span {
+  padding: 0 0.7rem;
+  background: #f3efe5;
+}
+
+.allergens {
+  margin-top: 1rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid #111;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.allergens p {
+  margin: 0.4rem 0;
+}
+
+.allergens .veg {
+  color: var(--orange);
+}
+
+@media (max-width: 46rem) {
+  .menu-inner {
+    padding: 2rem 1.25rem;
+    border-width: 5px;
+  }
+
+  .menu-logo {
+    margin-bottom: 2.25rem;
+  }
+
+  .menu-columns {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .menu-category.featured {
+    padding: 1rem;
+  }
+
+  .menu-category p {
+    font-size: 0.75rem;
+  }
+
+  .menu-category h3 {
+    font-size: 0.95rem;
+  }
+}
