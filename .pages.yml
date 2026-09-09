@@ -58,6 +58,99 @@ content:
           - { name: alt, label: Description de la photo, type: string, required: true }
           - { name: landscape, label: Photo horizontale, type: boolean, default: false }
 
+  - name: practical
+    label: Coordonnées et horaires
+    type: file
+    path: content/details.json
+    format: json
+    fields:
+      - { name: phoneDisplay, label: Téléphone affiché, type: string, required: true }
+      - { name: phoneLink, label: Téléphone sans espaces, type: string, required: true }
+      - { name: email, label: Adresse e-mail, type: string, required: true }
+      - { name: addressLine1, label: Adresse, type: string, required: true }
+      - { name: addressLine2, label: Code postal et ville, type: string, required: true }
+      - { name: mondayThursday, label: Horaires lundi à jeudi, type: string, required: true }
+      - { name: fridaySaturday, label: Horaires vendredi et samedi, type: string, required: true }
+      - { name: sunday, label: Horaires dimanche, type: string, required: true }
+
+  - name: restaurant_menu
+    label: Carte du restaurant
+    type: file
+    path: content/menu.json
+    format: json
+    fields:
+      - name: categories
+        label: Catégories
+        type: object
+        list:
+          min: 1
+          collapsible:
+            collapsed: true
+            summary: "{fields.title}"
+        fields:
+          - { name: title, label: Titre de la catégorie, type: string, required: true }
+          - name: column
+            label: Colonne
+            type: select
+            default: 1
+            options:
+              values:
+                - { value: 1, label: Gauche }
+                - { value: 2, label: Droite }
+          - name: style
+            label: Style
+            type: select
+            default: standard
+            options:
+              values:
+                - { value: standard, label: Normal }
+                - { value: featured, label: Encadré }
+                - { value: dessert, label: Dessert }
+          - name: items
+            label: Plats
+            type: object
+            list:
+              min: 1
+              collapsible:
+                collapsed: true
+                summary: "{fields.name} — {fields.price}"
+            fields:
+              - { name: name, label: Nom, type: string, required: true }
+              - { name: price, label: Prix, type: string, required: true }
+              - { name: description, label: Description, type: text }
+              - { name: allergens, label: Allergènes (ex. G, L, E), type: string }
+              - name: diet
+                label: Régime
+                type: select
+                default: none
+                options:
+                  values:
+                    - { value: none, label: Aucun }
+                    - { value: vegetarian, label: Végétarien }
+                    - { value: vegan, label: Végan }
+      - { name: dietLegend, label: Légende végétarien et végan, type: string }
+      - { name: allergenLegend, label: Légende des allergènes, type: text }
+      - { name: footerNote, label: Note sous le menu, type: text }
+
+  - name: custom_sections
+    label: Sections supplémentaires
+    type: file
+    path: content/sections.json
+    format: json
+    fields:
+      - name: sections
+        label: Sections
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{fields.title}"
+        fields:
+          - { name: eyebrow, label: Petit titre, type: string }
+          - { name: title, label: Grand titre, type: string, required: true }
+          - { name: text, label: Texte, type: text, required: true }
+          - { name: image, label: Image facultative, type: image }
+
 settings:
   hide: true
   content:

@@ -1,0 +1,28 @@
+{
+  "categories": [
+    {"title":"Starters","column":1,"style":"standard","items":[
+      {"name":"Artichoke Ricotta","allergens":"L","diet":"vegetarian","price":"250,-","description":"Baked artichoke, citric ricotta cream, green oil"},
+      {"name":"Humita Brûlée","allergens":"L","diet":"vegetarian","price":"250,-","description":"Creamy sweet corn stew, caramelized with ají"},
+      {"name":"Sweet Potato Skewers","allergens":"SU","diet":"vegetarian","price":"250,-","description":"Honey and balsamic vinegar glaze"}]},
+    {"title":"Mains","column":1,"style":"standard","items":[
+      {"name":"Grill Tartar","allergens":"E, G, SO, N","diet":"none","price":"250,-","description":"Beef, pickled mushrooms, macha emulsion, cured egg yolk, bread"},
+      {"name":"Spicy Mussels","allergens":"MO, L, G, SU","diet":"none","price":"250,-","description":"Spicy butter, white wine, bread"},
+      {"name":"Beef Skewers","allergens":"SO, G, E","diet":"none","price":"250,-","description":"Ponzu glaze, chimichurri mayo"},
+      {"name":"Pork Skewers","allergens":"E","diet":"none","price":"250,-","description":"Pibil glaze, lemon mayo, pickled onion"}]},
+    {"title":"Sweet Illusions & Desserts","column":1,"style":"dessert","items":[
+      {"name":"Sweet Selection","allergens":"","diet":"none","price":"250,-","description":"Save some room for dessert! Our pastry chef handcrafts exquisite trompe-l'œil creations — pistachio, raspberry, coffee bean, and regular seasonal surprises. Ask your server for today's sweet selection."}]},
+    {"title":"To Share / Finger Food","column":2,"style":"featured","items":[
+      {"name":"Cheeses and Hams Plate","allergens":"L, G, S","diet":"none","price":"250,-","description":"Honey, toast seeds, pickles, seasonal compote"},
+      {"name":"Croqueta de Roast Beef","allergens":"G, L, E, SO","diet":"none","price":"250,-","description":"Dry sweet chilli sauce"},
+      {"name":"Mille-Feuille de Pommes","allergens":"E, L","diet":"vegetarian","price":"250,-","description":"Salsa brava, aioli, chives"},
+      {"name":"Small Potatoes “Nabo”","allergens":"L","diet":"vegetarian","price":"250,-","description":"Cheese foam, jalapeno, brown butter"}]},
+    {"title":"Extras","column":2,"style":"standard","items":[
+      {"name":"Mix Salad","allergens":"M, SU","diet":"vegetarian","price":"250,-","description":"Mixed salad leaves, pickled vegetables, seasonal vinaigrette"},
+      {"name":"Bread and Butter","allergens":"G, L","diet":"vegetarian","price":"250,-","description":"Sourdough served with whipped mushroom butter"},
+      {"name":"Padron Peppers","allergens":"","diet":"vegan","price":"250,-","description":"Garlic and guindillas “al ajillo”"},
+      {"name":"Salsa Macha & Tortilla Chips","allergens":"N, S","diet":"vegan","price":"250,-","description":"Chili, seeds, nuts, oil"}]}
+  ],
+  "dietLegend": "Vegetarian · Vegan",
+  "allergenLegend": "G Gluten · L Dairy (Milk) · E Eggs · SO Soy · S Sesame · N Tree nuts & Peanuts · MO Molluscs · SU Sulphites · M Mustard",
+  "footerNote": "All prices are in NOK and include VAT. Please inform your server of any severe allergies."
+}

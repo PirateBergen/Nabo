@@ -1078,3 +1078,5 @@ h2 {
   object-fit: cover;
   object-position: center;
 }
+
+.custom-section{display:grid;gap:1rem}.custom-section>p:not(.eyebrow){max-width:54rem;font-size:clamp(1.05rem,2vw,1.35rem);line-height:1.65}.custom-section>img{width:100%;max-height:36rem;object-fit:cover;border-radius:.25rem;margin-top:1rem}
