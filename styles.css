@@ -754,3 +754,11 @@ h2 {
     drop-shadow(0 0 1.4rem rgba(255, 247, 235, .24))
     drop-shadow(0 .85rem .9rem rgba(0, 0, 0, .55));
 }
+
+/* Softer brand-colored halo behind the main logo. */
+.hero-logo {
+  filter:
+    drop-shadow(0 0 .4rem rgba(207, 127, 40, .25))
+    drop-shadow(0 0 1.15rem rgba(207, 127, 40, .14))
+    drop-shadow(0 .8rem .85rem rgba(0, 0, 0, .5));
+}
