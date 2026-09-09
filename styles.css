@@ -746,3 +746,11 @@ h2 {
     font-size: clamp(2.6rem, 12.5vw, 4.15rem);
   }
 }
+
+/* Soft contrast halo behind the main logo. */
+.hero-logo {
+  filter:
+    drop-shadow(0 0 .45rem rgba(255, 250, 242, .42))
+    drop-shadow(0 0 1.4rem rgba(255, 247, 235, .24))
+    drop-shadow(0 .85rem .9rem rgba(0, 0, 0, .55));
+}
