@@ -770,3 +770,70 @@ h2 {
     drop-shadow(0 0 .8rem rgba(207, 127, 40, .07))
     drop-shadow(0 .75rem .8rem rgba(0, 0, 0, .48));
 }
+
+/* Restore the more readable menu spacing without changing the rest of the site. */
+.menu-board {
+  padding-top: clamp(1.5rem, 3vw, 2.5rem);
+  padding-bottom: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.menu-inner {
+  padding: clamp(1.75rem, 3.5vw, 3rem) clamp(2rem, 5vw, 4.5rem);
+}
+
+.menu-logo {
+  width: min(20rem, 66vw);
+  margin-bottom: 2rem;
+}
+
+.menu-columns {
+  gap: clamp(1.75rem, 3.5vw, 3.5rem);
+}
+
+.menu-category {
+  margin-bottom: 1.75rem;
+}
+
+.menu-category > h2 {
+  margin-bottom: 1.4rem;
+  font-size: clamp(1.15rem, 2vw, 1.45rem);
+}
+
+.menu-category article {
+  margin-bottom: 1.35rem;
+}
+
+.menu-category h3 {
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
+  line-height: 1.2;
+}
+
+.menu-category p {
+  margin-top: .4rem;
+  font-size: .78rem;
+  line-height: 1.45;
+}
+
+.allergens {
+  margin-top: 1rem;
+  padding-top: 1.5rem;
+}
+
+@media (max-width: 46rem) {
+  .menu-inner {
+    padding: 2rem 1.25rem;
+  }
+
+  .menu-logo {
+    width: min(19rem, 72vw);
+    margin-bottom: 2.25rem;
+  }
+
+  .menu-category article {
+    margin-bottom: 1.45rem;
+  }
+
+  .menu-category p {
+    font-size: .78rem;
+  }
+}
