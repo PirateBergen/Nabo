@@ -1072,3 +1072,9 @@ h2 {
     height: min(76svh, 42rem);
   }
 }
+
+/* Landscape photos fill the portrait-oriented gallery frame. */
+.gallery-section .hero-slide.landscape img {
+  object-fit: cover;
+  object-position: center;
+}
