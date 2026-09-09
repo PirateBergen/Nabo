@@ -721,3 +721,28 @@ h2 {
     font-size: clamp(2.9rem, 14vw, 4.7rem);
   }
 }
+
+/* One more subtle reduction for headings and logos. */
+.hero-logo {
+  width: min(68vw, 37rem);
+}
+
+h1,
+h2 {
+  font-size: clamp(3.15rem, 6.8vw, 5.8rem);
+}
+
+.menu-logo {
+  width: min(18.5rem, 63vw);
+}
+
+@media (max-width: 40rem) {
+  .hero-logo {
+    width: 84vw;
+  }
+
+  h1,
+  h2 {
+    font-size: clamp(2.6rem, 12.5vw, 4.15rem);
+  }
+}
