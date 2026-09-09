@@ -274,3 +274,19 @@ footer {
 .hours div + div {
   background: transparent;
 }
+
+/* Keep the wood seamless while scrolling: repeat sideways, never vertically. */
+body {
+  background-repeat: no-repeat, repeat-x;
+  background-position: center top, center center;
+  background-size: 100% 100%, auto 100vh;
+  background-attachment: scroll, fixed;
+}
+
+@media (max-width: 40rem) {
+  body {
+    background-size: 100% 100%, auto 100svh;
+    background-attachment: scroll, scroll;
+    background-position: center top, center top;
+  }
+}
