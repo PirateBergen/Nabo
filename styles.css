@@ -362,3 +362,14 @@ footer {
   margin: 0 0 1.4rem;
   padding: 0;
 }
+
+/* Definitive fix: no line can cross the finger-food heading. */
+.menu-category.featured {
+  border-top: 0;
+}
+
+.menu-category.featured > h2::before,
+.menu-category.featured > h2::after {
+  content: none !important;
+  display: none !important;
+}
