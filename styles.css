@@ -927,3 +927,114 @@ h2 {
     padding-right: 1.25rem;
   }
 }
+
+/* Lightweight swipeable hero gallery. */
+.hero-gallery {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background: #160c06;
+  touch-action: pan-y;
+}
+
+.hero-gallery::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(to bottom, rgba(12,7,3,.44), rgba(20,10,4,.2) 50%, rgba(20,10,4,.68));
+}
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  opacity: 0;
+  transition: opacity .65s ease;
+}
+
+.hero-slide.active {
+  opacity: 1;
+}
+
+.hero-slide picture,
+.hero-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-slide img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.gallery-arrow,
+.gallery-dots {
+  position: absolute;
+  z-index: 4;
+}
+
+.gallery-arrow {
+  top: 50%;
+  width: 2.8rem;
+  height: 2.8rem;
+  border: 1px solid rgba(248,242,234,.62);
+  border-radius: 50%;
+  background: rgba(18,9,4,.42);
+  color: var(--cream);
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: transform .2s ease, background-color .2s ease;
+}
+
+.gallery-arrow:hover,
+.gallery-arrow:focus-visible {
+  background: rgba(207,127,40,.8);
+  transform: translateY(-50%) scale(1.06);
+}
+
+.gallery-prev { left: 1.25rem; }
+.gallery-next { right: 1.25rem; }
+
+.gallery-dots {
+  right: 1.25rem;
+  bottom: 1rem;
+  display: flex;
+  gap: .45rem;
+}
+
+.gallery-dot {
+  width: .6rem;
+  height: .6rem;
+  padding: 0;
+  border: 1px solid var(--cream);
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+}
+
+.gallery-dot.active {
+  background: var(--orange);
+  border-color: var(--orange);
+}
+
+@media (max-width: 40rem) {
+  .gallery-arrow {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.7rem;
+  }
+
+  .gallery-prev { left: .65rem; }
+  .gallery-next { right: .65rem; }
+  .gallery-dots { right: .75rem; bottom: .65rem; gap: .3rem; }
+  .gallery-dot { width: .5rem; height: .5rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-slide { transition: none; }
+}
