@@ -1038,3 +1038,37 @@ h2 {
 @media (prefers-reduced-motion: reduce) {
   .hero-slide { transition: none; }
 }
+
+/* Gallery placed between the introduction and story; every photo remains uncropped. */
+.gallery-shell {
+  padding: 1.25rem max(1.25rem, calc((100vw - 76rem) / 2));
+}
+
+.gallery-section {
+  position: relative;
+  inset: auto;
+  width: 100%;
+  height: clamp(32rem, 65vw, 52rem);
+  border: 1px solid rgba(207,127,40,.55);
+  border-radius: .35rem;
+  background: rgba(10,5,2,.72);
+}
+
+.gallery-section::after {
+  background: linear-gradient(to bottom, rgba(12,7,3,.12), transparent 45%, rgba(12,7,3,.18));
+}
+
+.gallery-section .hero-slide img {
+  object-fit: contain;
+  object-position: center;
+}
+
+@media (max-width: 40rem) {
+  .gallery-shell {
+    padding: .75rem;
+  }
+
+  .gallery-section {
+    height: min(76svh, 42rem);
+  }
+}
