@@ -343,3 +343,16 @@ footer {
 .menu-category.featured > h2 span {
   background: #f3efe5;
 }
+
+/* Paper supplied for the menu only. */
+.menu-inner {
+  background-color: #f3efe5;
+  background-image: url("assets/menu-paper.jpg");
+  background-repeat: repeat;
+  background-position: top left;
+  background-size: 34rem auto;
+}
+
+.menu-category.featured > h2 span {
+  background: transparent;
+}
