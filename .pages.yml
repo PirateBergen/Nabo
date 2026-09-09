@@ -53,8 +53,8 @@ content:
             collapsed: true
             summary: "{fields.alt}"
         fields:
-          - { name: desktop, label: Image principale, type: image, required: true }
-          - { name: mobile, label: Version légère pour mobile, type: image }
+          - { name: desktop, label: Photo à afficher, type: image, required: true }
+          - { name: mobile, label: Version mobile (créée automatiquement), type: image }
           - { name: alt, label: Description de la photo, type: string, required: true }
           - { name: landscape, label: Photo horizontale, type: boolean, default: false }
 
