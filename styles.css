@@ -198,3 +198,46 @@ body{background:#1a1008}
     font-size: 0.95rem;
   }
 }
+
+/* Wood texture continues through the whole page with a deepening brown veil. */
+body {
+  background-color: #1a1008;
+  background-image:
+    linear-gradient(to bottom, rgba(27, 16, 8, 0.20) 0%, rgba(30, 17, 8, 0.48) 38%, rgba(25, 13, 6, 0.76) 72%, rgba(18, 9, 4, 0.92) 100%),
+    url("assets/hero-wood.jpg");
+  background-repeat: no-repeat, repeat;
+  background-position: center top, center top;
+  background-size: 100% 100%, auto 850px;
+}
+
+.hero .placeholder,
+.reserve .placeholder {
+  background: transparent;
+}
+
+.hero .placeholder::before,
+.hero .placeholder::after,
+.reserve .placeholder::before,
+.reserve .placeholder::after {
+  display: none;
+}
+
+.section,
+.alt,
+.story,
+.reserve,
+footer,
+.menu-board {
+  background: transparent;
+}
+
+.hours div,
+.hours div + div {
+  background: rgba(18, 9, 4, 0.56);
+}
+
+@media (max-width: 40rem) {
+  body {
+    background-size: 100% 100%, auto 720px;
+  }
+}
