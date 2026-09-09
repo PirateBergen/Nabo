@@ -1,0 +1,69 @@
+media:
+  input: assets/gallery
+  output: /assets/gallery
+  extensions: [jpg, jpeg, png, webp]
+  rename: safe
+
+content:
+  - name: site_texts
+    label: Textes du site
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - name: nb
+        label: Norvégien
+        type: object
+        fields:
+          - { name: cuisines, label: Présentation courte, type: string }
+          - { name: tagline, label: Slogan, type: string }
+          - { name: storyTitle, label: Titre de présentation, type: string }
+          - { name: storyLead, label: Premier paragraphe, type: text }
+          - { name: storyBody, label: Deuxième paragraphe, type: text }
+          - { name: welcome, label: Titre de réservation, type: string }
+          - { name: occasion, label: Texte de réservation, type: text }
+          - { name: groups, label: Taille des groupes, type: string }
+          - { name: footTag, label: Texte du pied de page, type: text }
+      - name: en
+        label: Anglais
+        type: object
+        fields:
+          - { name: cuisines, label: Présentation courte, type: string }
+          - { name: tagline, label: Slogan, type: string }
+          - { name: storyTitle, label: Titre de présentation, type: string }
+          - { name: storyLead, label: Premier paragraphe, type: text }
+          - { name: storyBody, label: Deuxième paragraphe, type: text }
+          - { name: welcome, label: Titre de réservation, type: string }
+          - { name: occasion, label: Texte de réservation, type: text }
+          - { name: groups, label: Taille des groupes, type: string }
+          - { name: footTag, label: Texte du pied de page, type: text }
+
+  - name: gallery
+    label: Galerie photos
+    type: file
+    path: content/gallery.json
+    format: json
+    fields:
+      - name: photos
+        label: Photos
+        type: object
+        list:
+          min: 1
+          collapsible:
+            collapsed: true
+            summary: "{fields.alt}"
+        fields:
+          - { name: desktop, label: Image principale, type: image, required: true }
+          - { name: mobile, label: Version légère pour mobile, type: image }
+          - { name: alt, label: Description de la photo, type: string, required: true }
+          - { name: landscape, label: Photo horizontale, type: boolean, default: false }
+
+settings:
+  hide: true
+  content:
+    merge: true
+  commit:
+    templates:
+      create: "Ajout de contenu via l'administration"
+      update: "Mise à jour du site via l'administration"
+      delete: "Suppression de contenu via l'administration"
