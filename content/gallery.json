@@ -1,6 +1,18 @@
 {
   "photos": [
     {
+      "desktop": "/assets/gallery/dsc08571-copie-8-desktop.webp",
+      "mobile": "/assets/gallery/dsc08571-copie-8-mobile.webp",
+      "alt": "small presentation of our menu",
+      "landscape": false
+    },
+    {
+      "desktop": "/assets/gallery/dsc08571-copie-4-desktop.webp",
+      "mobile": "/assets/gallery/dsc08571-copie-4-mobile.webp",
+      "alt": "one our favorite",
+      "landscape": true
+    },
+    {
       "desktop": "/assets/gallery/gallery-08-desktop.webp",
       "mobile": "/assets/gallery/gallery-08-mobile.webp",
       "alt": "Fresh herbs at Nabo",
@@ -13,21 +25,15 @@
       "landscape": true
     },
     {
-      "desktop": "/assets/gallery/gallery-03-desktop.webp",
-      "mobile": "/assets/gallery/gallery-03-mobile.webp",
-      "alt": "Fresh pastries in the kitchen",
-      "landscape": false
-    },
-    {
-      "desktop": "/assets/gallery/gallery-06-desktop.webp",
-      "mobile": "/assets/gallery/gallery-06-mobile.webp",
-      "alt": "Nabo dessert",
-      "landscape": false
-    },
-    {
       "desktop": "/assets/gallery/gallery-10-desktop.webp",
       "mobile": "/assets/gallery/gallery-10-mobile.webp",
       "alt": "Nabo restaurant interior",
+      "landscape": false
+    },
+    {
+      "desktop": "/assets/gallery/gallery-03-desktop.webp",
+      "mobile": "/assets/gallery/gallery-03-mobile.webp",
+      "alt": "Fresh pastries in the kitchen",
       "landscape": false
     },
     {
@@ -37,15 +43,9 @@
       "landscape": true
     },
     {
-      "desktop": "/assets/gallery/dsc08571-copie-4-desktop.webp",
-      "mobile": "/assets/gallery/dsc08571-copie-4-mobile.webp",
-      "alt": "one our favorite",
-      "landscape": true
-    },
-    {
-      "desktop": "/assets/gallery/dsc08571-copie-8-desktop.webp",
-      "mobile": "/assets/gallery/dsc08571-copie-8-mobile.webp",
-      "alt": "small presentation of our menu",
+      "desktop": "/assets/gallery/gallery-06-desktop.webp",
+      "mobile": "/assets/gallery/gallery-06-mobile.webp",
+      "alt": "Nabo dessert",
       "landscape": false
     }
   ]
