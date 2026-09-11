@@ -1,14 +1,52 @@
 {
   "photos": [
-    { "desktop": "/assets/gallery/gallery-05-desktop.webp", "mobile": "/assets/gallery/gallery-05-mobile.webp", "alt": "Nabo kitchen team at work", "landscape": true },
-    { "desktop": "/assets/gallery/gallery-09-desktop.webp", "mobile": "/assets/gallery/gallery-09-mobile.webp", "alt": "Desserts prepared in the Nabo kitchen", "landscape": true },
-    { "desktop": "/assets/gallery/gallery-08-desktop.webp", "mobile": "/assets/gallery/gallery-08-mobile.webp", "alt": "Fresh herbs at Nabo", "landscape": true },
-    { "desktop": "/assets/gallery/gallery-01-desktop.webp", "mobile": "/assets/gallery/gallery-01-mobile.webp", "alt": "Vintage amplifier in the restaurant", "landscape": true },
-    { "desktop": "/assets/gallery/gallery-02-desktop.webp", "mobile": "/assets/gallery/gallery-02-mobile.webp", "alt": "Nabo chef in the kitchen", "landscape": false },
-    { "desktop": "/assets/gallery/gallery-03-desktop.webp", "mobile": "/assets/gallery/gallery-03-mobile.webp", "alt": "Fresh pastries in the kitchen", "landscape": false },
-    { "desktop": "/assets/gallery/gallery-04-desktop.webp", "mobile": "/assets/gallery/gallery-04-mobile.webp", "alt": "Coffee being prepared", "landscape": false },
-    { "desktop": "/assets/gallery/gallery-06-desktop.webp", "mobile": "/assets/gallery/gallery-06-mobile.webp", "alt": "Nabo dessert", "landscape": false },
-    { "desktop": "/assets/gallery/gallery-07-desktop.webp", "mobile": "/assets/gallery/gallery-07-mobile.webp", "alt": "Bar seating at Nabo", "landscape": false },
-    { "desktop": "/assets/gallery/gallery-10-desktop.webp", "mobile": "/assets/gallery/gallery-10-mobile.webp", "alt": "Nabo restaurant interior", "landscape": false }
+    {
+      "desktop": "/assets/gallery/gallery-08-desktop.webp",
+      "mobile": "/assets/gallery/gallery-08-mobile.webp",
+      "alt": "Fresh herbs at Nabo",
+      "landscape": true
+    },
+    {
+      "desktop": "/assets/gallery/gallery-01-desktop.webp",
+      "mobile": "/assets/gallery/gallery-01-mobile.webp",
+      "alt": "Vintage amplifier in the restaurant",
+      "landscape": true
+    },
+    {
+      "desktop": "/assets/gallery/gallery-03-desktop.webp",
+      "mobile": "/assets/gallery/gallery-03-mobile.webp",
+      "alt": "Fresh pastries in the kitchen",
+      "landscape": false
+    },
+    {
+      "desktop": "/assets/gallery/gallery-06-desktop.webp",
+      "mobile": "/assets/gallery/gallery-06-mobile.webp",
+      "alt": "Nabo dessert",
+      "landscape": false
+    },
+    {
+      "desktop": "/assets/gallery/gallery-10-desktop.webp",
+      "mobile": "/assets/gallery/gallery-10-mobile.webp",
+      "alt": "Nabo restaurant interior",
+      "landscape": false
+    },
+    {
+      "desktop": "/assets/gallery/dsc08571-copie.jpg",
+      "mobile": "/assets/gallery/dsc08571-copie.jpg",
+      "alt": "charcuterie and cheese",
+      "landscape": true
+    },
+    {
+      "desktop": "/assets/gallery/dsc08571-copie-4.jpg",
+      "mobile": "/assets/gallery/dsc08571-copie-4.jpg",
+      "alt": "one our favorite",
+      "landscape": true
+    },
+    {
+      "desktop": "/assets/gallery/dsc08571-copie-8.jpg",
+      "mobile": "/assets/gallery/dsc08571-copie-8.jpg",
+      "alt": "small presentation of our menu",
+      "landscape": false
+    }
   ]
 }
