@@ -1,10 +1,10 @@
 {
-  "phoneDisplay": "+47 55 12 34 56",
-  "phoneLink": "+4755123456",
+  "phoneDisplay": "+47 934 46 101",
+  "phoneLink": "+4793446101",
   "email": "restaurant@nabobergen.com",
-  "addressLine1": "Strandgaten 18",
+  "addressLine1": "Strandgaten 87",
   "addressLine2": "5004 Bergen, Norge",
-  "mondayThursday": "16:00–22:00",
-  "fridaySaturday": "15:00–23:00",
-  "sunday": "14:00–21:00"
+  "mondayThursday": "16:00–21:00",
+  "fridaySaturday": "16:00–22:00",
+  "sunday": "16:00–21:00"
 }

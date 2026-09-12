@@ -4,7 +4,7 @@
   if(details){
     document.querySelectorAll('a[href^="tel:"]').forEach(a=>a.href='tel:'+details.phoneLink);
     document.querySelectorAll('a[href^="mailto:"]').forEach(a=>a.href='mailto:'+details.email);
-    const phone=[...document.querySelectorAll('a[href^="tel:"]')].at(-1);if(phone)phone.textContent=details.phoneDisplay;
+    document.querySelectorAll('a[href^="tel:"]:not([data-i18n])').forEach(a=>a.textContent=details.phoneDisplay);
     const email=[...document.querySelectorAll('footer a[href^="mailto:"]')][0];if(email)email.textContent=details.email;
     const address=document.querySelector('footer address');if(address)address.innerHTML=`${details.addressLine1}<br>${details.addressLine2}`;
     const times=document.querySelectorAll('.hours dd');[details.mondayThursday,details.fridaySaturday,details.sunday].forEach((v,i)=>{if(times[i])times[i].textContent=v});
