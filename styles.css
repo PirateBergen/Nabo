@@ -1157,3 +1157,6 @@ body.photo-viewer-open{overflow:hidden}
 .photo-viewer-copy>h2{flex:none;font:1.2rem/1.25 Georgia,serif;margin:0 0 .6rem;color:#fff7eb;text-shadow:0 1px 4px #000}
 .photo-viewer-copy>p{min-height:0;overflow:auto;overscroll-behavior:contain;pointer-events:auto;font:1rem/1.45 Georgia,serif;white-space:pre-line;margin:0;color:#fff7eb;text-shadow:0 1px 4px #000;scrollbar-width:thin}
 .photo-viewer-close{z-index:2;text-shadow:0 1px 5px #000}
+
+/* Fit the full caption instead of scrolling inside the photo. */
+.photo-viewer-copy>p{flex:none;overflow:visible;line-height:1.4}

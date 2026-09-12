@@ -17,7 +17,15 @@
   const dismiss=()=>viewer.close();close.addEventListener('click',dismiss);full.addEventListener('click',dismiss);
   viewer.addEventListener('click',event=>{if(event.target===viewer){const rect=viewer.getBoundingClientRect();if(event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom)dismiss()}});
   viewer.addEventListener('close',()=>document.body.classList.remove('photo-viewer-open'));
-  const openPhoto=photo=>{full.src=photo.desktop;full.alt=photo.alt||'';heading.textContent=photo.captionTitle||'';heading.hidden=!photo.captionTitle;body.textContent=photo.caption||'';viewer.showModal();viewer.scrollTop=0;document.body.classList.add('photo-viewer-open')};
+  const fitPhotoText=()=>{
+    if(!viewer.open)return;
+    viewer.style.minHeight='';body.style.fontSize='16px';
+    const needed=()=>{const css=getComputedStyle(overlay);return body.getBoundingClientRect().height+(heading.hidden?0:heading.getBoundingClientRect().height+parseFloat(getComputedStyle(heading).marginBottom))+parseFloat(css.paddingTop)+parseFloat(css.paddingBottom)};
+    for(let size=16;size>12&&needed()>overlay.clientHeight;size-=.5)body.style.fontSize=(size-.5)+'px';
+    if(needed()>overlay.clientHeight)viewer.style.minHeight=Math.min(needed()+4,window.innerHeight*.9)+'px';
+  };
+  full.addEventListener('load',fitPhotoText);window.addEventListener('resize',fitPhotoText);
+  const openPhoto=photo=>{full.src=photo.desktop;full.alt=photo.alt||'';heading.textContent=photo.captionTitle||'';heading.hidden=!photo.captionTitle;body.textContent=photo.caption||'';viewer.showModal();viewer.scrollTop=0;document.body.classList.add('photo-viewer-open');requestAnimationFrame(fitPhotoText)};
   try {
     const response=await fetch('content/gallery.json',{cache:'no-cache'});
     if(!response.ok)return;
