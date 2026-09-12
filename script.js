@@ -8,6 +8,15 @@
 (async()=>{
   const gallery=document.querySelector('.static-gallery');
   if(!gallery)return;
+  const viewer=document.createElement('dialog');
+  viewer.className='photo-viewer';viewer.setAttribute('aria-label','Photo and description');
+  const close=document.createElement('button'),full=document.createElement('img'),heading=document.createElement('h2'),body=document.createElement('p');
+  close.type='button';close.className='photo-viewer-close';close.textContent='×';close.setAttribute('aria-label','Close');
+  viewer.append(close,full,heading,body);document.body.append(viewer);
+  const dismiss=()=>viewer.close();close.addEventListener('click',dismiss);full.addEventListener('click',dismiss);
+  viewer.addEventListener('click',event=>{if(event.target===viewer){const rect=viewer.getBoundingClientRect();if(event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom)dismiss()}});
+  viewer.addEventListener('close',()=>document.body.classList.remove('photo-viewer-open'));
+  const openPhoto=photo=>{full.src=photo.desktop;full.alt=photo.alt||'';heading.textContent=photo.captionTitle||'';heading.hidden=!photo.captionTitle;body.textContent=photo.caption||'';viewer.showModal();viewer.scrollTop=0;document.body.classList.add('photo-viewer-open')};
   try {
     const response=await fetch('content/gallery.json',{cache:'no-cache'});
     if(!response.ok)return;
@@ -27,6 +36,7 @@
         figure.addEventListener('pointerleave',event=>{if(event.pointerType==='mouse'&&!details.contains(document.activeElement))details.open=false});
         figure.addEventListener('click',event=>{
           event.preventDefault();
+          if(matchMedia('(max-width: 600px)').matches){details.open=false;openPhoto(photo);return}
           const opening=!details.open;
           if(opening)gallery.querySelectorAll('details[open]').forEach(other=>{if(other!==details)other.open=false});
           details.open=opening;
