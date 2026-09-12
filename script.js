@@ -17,7 +17,9 @@
     data.photos.slice(0,3).forEach(photo=>{
       const figure=document.createElement('figure'),picture=document.createElement('picture'),img=document.createElement('img');
       if(photo.mobile){const source=document.createElement('source');source.media='(max-width: 600px)';source.srcset=photo.mobile;picture.append(source)}
-      img.src=photo.desktop;img.alt=photo.alt||'';img.loading='lazy';picture.append(img);figure.append(picture);fragment.append(figure);
+      img.src=photo.desktop;img.alt=photo.alt||'';img.loading='lazy';picture.append(img);figure.append(picture);
+      if(photo.caption){const caption=document.createElement('figcaption');caption.lang='en';caption.textContent=photo.caption;figure.append(caption)}
+      fragment.append(figure);
     });
     gallery.replaceChildren(fragment);
   }catch{}

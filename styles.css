@@ -1088,3 +1088,9 @@ h2 {
 .static-gallery picture,.static-gallery img{display:block;width:100%;height:100%}
 .static-gallery img{object-fit:cover}
 @media(max-width:600px){.static-gallery{grid-template-columns:1fr;max-width:400px}}
+
+/* Captions below the fixed photos, with equal image heights. */
+.static-gallery{align-items:start}
+.static-gallery figure{aspect-ratio:auto;overflow:visible}
+.static-gallery picture{height:auto;aspect-ratio:2/3;overflow:hidden;border-radius:6px}
+.static-gallery figcaption{margin-top:.75rem;padding:1.25rem;background:#281b13;border-radius:6px;color:#f6f0e6;font-size:1rem;line-height:1.65;text-align:left}
