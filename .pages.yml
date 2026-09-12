@@ -56,7 +56,8 @@ content:
           - { name: desktop, label: Photo à afficher, type: image, required: true }
           - { name: mobile, label: Version mobile (créée automatiquement), type: image }
           - { name: alt, label: Description de la photo, type: string, required: true }
-          - { name: caption, label: Texte affiché sous la photo, type: text }
+          - { name: captionTitle, label: Titre affiché sur la photo, type: string }
+          - { name: caption, label: Texte complet au survol ou au toucher, type: text }
           - { name: landscape, label: Photo horizontale, type: boolean, default: false }
 
   - name: practical

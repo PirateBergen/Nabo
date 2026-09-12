@@ -8,16 +8,20 @@
       "caption": "At Nabo, it’s all about lively tables, clinking glasses, and plates meant to be passed around. No fuss, just honest, bold flavors designed for sharing, thoughtful wines poured generously, and the simple joy of good company. Pull up a chair, pick a few dishes, and make yourself at home."
     },
     {
-      "desktop": "/assets/gallery/dsc08571-copie-4-desktop.webp",
-      "mobile": "/assets/gallery/dsc08571-copie-4-mobile.webp",
-      "alt": "one our favorite",
-      "landscape": true
+      "desktop": "/assets/gallery/small-potatoes-desktop.webp",
+      "mobile": "/assets/gallery/small-potatoes-mobile.webp",
+      "alt": "Small Potatoes « Nabo »",
+      "landscape": true,
+      "captionTitle": "Small Potatoes « Nabo »",
+      "caption": "Golden roasted potatoes coated in brown butter and smothered under a velvety, lightly spiced cheese foam.\n\nIngredients: Roasted potatoes, cheese foam, grilled jalapeño, brown butter, fresh greens."
     },
     {
-      "desktop": "/assets/gallery/gallery-08-desktop.webp",
-      "mobile": "/assets/gallery/gallery-08-mobile.webp",
-      "alt": "Fresh herbs at Nabo",
-      "landscape": true
+      "desktop": "/assets/gallery/pork-cochinita-desktop.webp",
+      "mobile": "/assets/gallery/pork-cochinita-mobile.webp",
+      "alt": "Pork Skewers (Cochinita)",
+      "landscape": true,
+      "captionTitle": "Pork Skewers (Cochinita)",
+      "caption": "Slow-cooked pork infused with vibrant Yucatán achiote spices, balanced by citrus mayo and tangy pickled red onions.\n\nIngredients: Pork shoulder marinated in achiote pibil adobo, citrus lemon mayo, pickled red onions."
     },
     {
       "desktop": "/assets/gallery/gallery-01-desktop.webp",

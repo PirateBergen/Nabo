@@ -21,7 +21,7 @@
       if(photo.caption){
         figure.classList.add('photo-story');
         const caption=document.createElement('figcaption'),details=document.createElement('details'),summary=document.createElement('summary'),text=document.createElement('p');
-        caption.lang='en';summary.textContent=photo.caption.split(/(?<=[.!?])\s/)[0];text.textContent=photo.caption;
+        caption.lang='en';summary.textContent=photo.captionTitle||photo.caption.split(/(?<=[.!?])\s/)[0];text.textContent=photo.caption;
         details.append(summary,text);caption.append(details);figure.append(caption);
         figure.addEventListener('pointerenter',event=>{if(event.pointerType==='mouse'&&matchMedia('(hover: hover)').matches)details.open=true});
         figure.addEventListener('pointerleave',event=>{if(event.pointerType==='mouse'&&!details.contains(document.activeElement))details.open=false});

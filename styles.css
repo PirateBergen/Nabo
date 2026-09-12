@@ -1107,3 +1107,5 @@ h2 {
 .photo-story details[open] summary::after{content:' −'}
 .photo-story details p{font-family:Georgia,'Times New Roman',serif;font-size:clamp(1.15rem,1.8vw,1.5rem);line-height:1.5;margin:1rem 0 0}
 .photo-story summary:focus-visible{outline:2px solid #dea24d;outline-offset:6px}
+
+.photo-story details p{white-space:pre-line}
