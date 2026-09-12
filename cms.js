@@ -2,6 +2,7 @@
   const get=async path=>{try{const r=await fetch(path,{cache:'no-cache'});return r.ok?await r.json():null}catch{return null}};
   const [details,menu,custom]=await Promise.all([get('content/details.json'),get('content/menu.json'),get('content/sections.json')]);
   if(details){
+    if(details.bookingUrl){try{const url=new URL(details.bookingUrl);if(url.protocol==='https:')document.querySelectorAll('a[data-booking]').forEach(a=>a.href=url.href)}catch{}}
     document.querySelectorAll('a[href^="tel:"]').forEach(a=>a.href='tel:'+details.phoneLink);
     document.querySelectorAll('a[href^="mailto:"]').forEach(a=>a.href='mailto:'+details.email);
     document.querySelectorAll('a[href^="tel:"]:not([data-i18n])').forEach(a=>a.textContent=details.phoneDisplay);

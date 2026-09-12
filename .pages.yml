@@ -66,6 +66,7 @@ content:
     path: content/details.json
     format: json
     fields:
+      - { name: bookingUrl, label: Lien de réservation, type: string, required: true }
       - { name: phoneDisplay, label: Téléphone affiché, type: string, required: true }
       - { name: phoneLink, label: Téléphone sans espaces, type: string, required: true }
       - { name: email, label: Adresse e-mail, type: string, required: true }
