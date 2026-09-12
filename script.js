@@ -18,7 +18,16 @@
       const figure=document.createElement('figure'),picture=document.createElement('picture'),img=document.createElement('img');
       if(photo.mobile){const source=document.createElement('source');source.media='(max-width: 600px)';source.srcset=photo.mobile;picture.append(source)}
       img.src=photo.desktop;img.alt=photo.alt||'';img.loading='lazy';picture.append(img);figure.append(picture);
-      if(photo.caption){const caption=document.createElement('figcaption');caption.lang='en';caption.textContent=photo.caption;figure.append(caption)}
+      if(photo.caption){
+        figure.classList.add('photo-story');
+        const caption=document.createElement('figcaption'),details=document.createElement('details'),summary=document.createElement('summary'),text=document.createElement('p');
+        caption.lang='en';summary.textContent=photo.caption.split(/(?<=[.!?])\s/)[0];text.textContent=photo.caption;
+        details.append(summary,text);caption.append(details);figure.append(caption);
+        figure.addEventListener('pointerenter',event=>{if(event.pointerType==='mouse'&&matchMedia('(hover: hover)').matches)details.open=true});
+        figure.addEventListener('pointerleave',event=>{if(event.pointerType==='mouse'&&!details.contains(document.activeElement))details.open=false});
+        picture.addEventListener('click',()=>{details.open=!details.open});
+        figure.addEventListener('keydown',event=>{if(event.key==='Escape'){details.open=false;summary.focus()}});
+      }
       fragment.append(figure);
     });
     gallery.replaceChildren(fragment);
