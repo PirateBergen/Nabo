@@ -12,7 +12,8 @@
   viewer.className='photo-viewer';viewer.setAttribute('aria-label','Photo and description');
   const close=document.createElement('button'),full=document.createElement('img'),heading=document.createElement('h2'),body=document.createElement('p');
   close.type='button';close.className='photo-viewer-close';close.textContent='×';close.setAttribute('aria-label','Close');
-  viewer.append(close,full,heading,body);document.body.append(viewer);
+  const overlay=document.createElement('div');overlay.className='photo-viewer-copy';overlay.append(heading,body);
+  viewer.append(close,full,overlay);document.body.append(viewer);
   const dismiss=()=>viewer.close();close.addEventListener('click',dismiss);full.addEventListener('click',dismiss);
   viewer.addEventListener('click',event=>{if(event.target===viewer){const rect=viewer.getBoundingClientRect();if(event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom)dismiss()}});
   viewer.addEventListener('close',()=>document.body.classList.remove('photo-viewer-open'));
