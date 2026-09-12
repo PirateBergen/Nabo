@@ -22,7 +22,6 @@ content:
           - { name: storyBody, label: Deuxième paragraphe, type: text }
           - { name: welcome, label: Titre de réservation, type: string }
           - { name: occasion, label: Texte de réservation, type: text }
-          - { name: groups, label: Taille des groupes, type: string }
           - { name: footTag, label: Texte du pied de page, type: text }
       - name: en
         label: Anglais
@@ -35,7 +34,6 @@ content:
           - { name: storyBody, label: Deuxième paragraphe, type: text }
           - { name: welcome, label: Titre de réservation, type: string }
           - { name: occasion, label: Texte de réservation, type: text }
-          - { name: groups, label: Taille des groupes, type: string }
           - { name: footTag, label: Texte du pied de page, type: text }
 
   - name: gallery
