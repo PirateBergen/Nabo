@@ -1109,3 +1109,8 @@ h2 {
 .photo-story summary:focus-visible{outline:2px solid #dea24d;outline-offset:6px}
 
 .photo-story details p{white-space:pre-line}
+
+/* Keep only a compact close control above the expanded description. */
+.photo-story details[open] summary{font-size:0;line-height:1;text-align:right}
+.photo-story details[open] summary::after{content:'×';display:inline-block;font-family:Arial,sans-serif;font-size:1.75rem;line-height:1;padding:.35rem}
+.photo-story details[open] p{margin-top:.25rem}
