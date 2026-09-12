@@ -25,7 +25,12 @@
         details.append(summary,text);caption.append(details);figure.append(caption);
         figure.addEventListener('pointerenter',event=>{if(event.pointerType==='mouse'&&matchMedia('(hover: hover)').matches)details.open=true});
         figure.addEventListener('pointerleave',event=>{if(event.pointerType==='mouse'&&!details.contains(document.activeElement))details.open=false});
-        picture.addEventListener('click',()=>{details.open=!details.open});
+        figure.addEventListener('click',event=>{
+          event.preventDefault();
+          const opening=!details.open;
+          if(opening)gallery.querySelectorAll('details[open]').forEach(other=>{if(other!==details)other.open=false});
+          details.open=opening;
+        });
         figure.addEventListener('keydown',event=>{if(event.key==='Escape'){details.open=false;summary.focus()}});
       }
       fragment.append(figure);

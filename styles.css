@@ -1114,3 +1114,17 @@ h2 {
 .photo-story details[open] summary{font-size:0;line-height:1;text-align:right}
 .photo-story details[open] summary::after{content:'×';display:inline-block;font-family:Arial,sans-serif;font-size:1.75rem;line-height:1;padding:.35rem}
 .photo-story details[open] p{margin-top:.25rem}
+
+/* Three mobile photos; expanded descriptions use the full row for readability. */
+@media(max-width:600px){
+  .static-gallery{grid-template-columns:repeat(3,minmax(0,1fr));max-width:none;gap:8px}
+  .static-gallery .photo-story{overflow:visible}
+  .photo-story details{padding:.5rem}
+  .photo-story summary{font-size:.8rem;line-height:1.25;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  .static-gallery .photo-story:has(details[open]) figcaption{position:relative;inset:auto;width:calc(300% + 16px);margin-top:10px;background:#281b13;border-radius:6px}
+  .static-gallery .photo-story:nth-child(2):has(details[open]) figcaption{left:calc(-100% - 8px)}
+  .static-gallery .photo-story:nth-child(3):has(details[open]) figcaption{left:calc(-200% - 16px)}
+  .photo-story details[open]{padding:1rem;border-radius:6px;max-height:none;overflow:visible}
+  .photo-story details[open] summary{display:block}
+  .photo-story details[open] p{font-size:1.15rem;line-height:1.55}
+}
