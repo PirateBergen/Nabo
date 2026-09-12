@@ -1,24 +1,24 @@
 {
   "nb": {
-    "cuisines": "Uformell mat · Enkelt · Sosialt",
-    "tagline": "Enkelt. Uformelt. Godt selskap.",
-    "storyTitle": "Et uformelt kjøkken .",
-    "storyLead": "Nabo er et uformelt sted i Bergen, med enkel mat laget for å deles rundt bordet.",
-    "storyBody": "Vi lager mat for kvelder som kan deles — uformelt, varmt og med plass til både kjente favoritter og nye oppdagelser.",
-    "welcome": "Vi gleder oss til å se deg",
-    "occasion": "Enten det er en hverdagskveld eller en spesiell anledning, dekker vi bord for deg.",
+    "cuisines": "Uformelt · Sesongens smaker · Ferske råvarer",
+    "tagline": "God mat. Et glass eller to. Føl deg som hjemme.",
+    "storyTitle": "Gode smaker, godt selskap",
+    "storyLead": "Nabo er en uformell restaurant i Bergen der ferske råvarer og sesongen setter smaken på maten. Vi legger omtanke i hver rett, med friske smaker og små detaljer som gir lyst på en bit til.",
+    "storyBody": "Velg noen retter, send dem rundt bordet og nyt et glass med noe du liker. Kom innom for en liten matbit, eller bli hele kvelden — her er det tid til god mat og en prat til.",
+    "welcome": "Kom inn, finn deg en plass",
+    "occasion": "En kveld med venner, et glass etter jobb eller noe å feire — vi gjør plass rundt bordet.",
     "groups": "Grupper fra 2 til 20 personer.",
-    "footTag": "Uformell mat. Gode kvelder. Hjemme hos Nabo i Bergen."
+    "footTag": "Ferske råvarer. Retter å dele. Godt selskap. Hjemme hos Nabo i Bergen."
   },
   "en": {
-    "cuisines": "Casual dining · Simple · Welcoming",
-    "tagline": "Simple. Casual. Good company.",
-    "storyTitle": "A casual kitchen",
-    "storyLead": "Nabo is a casual place in Bergen, serving simple food made to be shared around the table.",
-    "storyBody": "We cook for evenings made to be shared — relaxed, warm, with room for familiar favourites and new discoveries.",
-    "welcome": "We look forward to seeing you",
-    "occasion": "Whether it's a weeknight or a special occasion, we'll set a table for you.",
+    "cuisines": "Casual dining · Seasonal plates · Fresh ingredients",
+    "tagline": "Good food. A glass or two. Make yourself at home.",
+    "storyTitle": "Fresh plates, good company",
+    "storyLead": "Nabo is a casual restaurant in Bergen where fresh ingredients and the seasons shape what’s on the plate. We put care into every dish, with bright flavours and little details that make you want another bite.",
+    "storyBody": "Pick a few plates, pass them around and pour a glass of something you like. Stay for a bite or settle in for the evening — there’s always time for good food and a little more conversation.",
+    "welcome": "Come on in, take a seat",
+    "occasion": "A catch-up with friends, a drink after work or an evening worth celebrating — we’ll make room at the table.",
     "groups": "Groups from 2 to 20 people.",
-    "footTag": "Casual food. Good evenings. At home with Nabo in Bergen."
+    "footTag": "Fresh ingredients. Plates to share. Good company. At home with Nabo in Bergen."
   }
 }
